@@ -1,6 +1,8 @@
 $(function(){
 
 
+$('.vignette').css( 'cursor', 'pointer' );
+
 /*
   var card = $(".header");
 
