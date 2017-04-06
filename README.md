@@ -1,2 +1,4 @@
-# identityrp_beta_website
-Site web d'annonce de la beta IdentityRP
+# Site web IdentityRP 
+## Site web d'annonce de la béta
+
+Projet de site web d'annonce de la béta du serveur GTA V RP : IdentityRP.
