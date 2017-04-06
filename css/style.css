@@ -1,0 +1,153 @@
+/* Colors
+  - Banner background : #5e5e5e
+  - Banner brand : #3c3c3c
+  - Banner brand hover : #5e5e5e
+
+
+img placeholder
+https://unsplash.it/1920/1080
+
+
+
+background http://cdn.wccftech.com/wp-content/uploads/2015/05/GTA-V-6K-7.jpg  // http://wccftech.com/gta-v-latest-patch-degrades-game-performance-antimodding-tech-culprit/
+
+
+*/
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#f6f6f6;
+}
+.container-fluid{
+  padding: 0;
+}
+
+/* General */
+a, a:hover, a:focus{
+  text-decoration: none;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header{
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  border-bottom: 1px solid #aaa;
+}
+
+.nav-bar{
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #777;
+  background-color: rgba(0,0,0,0.2);
+}
+.brand{
+  float:left;
+}
+.brand > img{
+  height: 90px;
+  margin-left: 30px;
+}
+.menu{
+  float:right;
+  margin-right: 50px;
+}
+.menu > a{
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 25px;
+  font-size: 1em;
+}
+.menu > a:hover{
+  color: #d5d5d5;
+}
+.menu > a:focus{
+  color: #eee;
+}
+.banner-content{
+  margin-top: 30vh;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.banner-content > h1, .banner-content > p{
+  color: #eee;
+  text-transform: uppercase;
+}
+.banner-content > h1{
+  font-weight: bold;
+  font-size: 2em;
+}
+.banner-content > p{
+  font-size: 1.5em;
+}
+/*
+
+
+/* Presentation */
+#presentation{
+  border-bottom: 1px solid #ccc;
+}
+#presentation .pres-content{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#presentation .logo-pres{
+  display: block;
+  height: 140px;
+}
+#presentation .title-pres{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#presentation .vignette{
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+#presentation .vignette-photo{
+  width: 100%;
+}
+#presentation .title{
+  margin-top: 25px;
+  margin-left: 20px;
+}
+#presentation .desc-pres{
+  margin-left:25px;
+  margin-right:25px;
+  margin-bottom:25px;
+}
+
+
+/* Acces */
+#acces{
+  background-color: #e5e5e5;
+}
+#acces .acces-content{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#acces .title-acces{
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#acces .acces-img{
+  width: 100%;
+}
