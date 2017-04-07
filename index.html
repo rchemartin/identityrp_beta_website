@@ -7,6 +7,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
   <body>
 
@@ -19,63 +20,179 @@
           <a href="#beta" class="link">Beta</a>
           <a href="#presentation" class="link">Gameplay</a>
           <a href="#acces" class="link">Nous rejoindre</a>
-          <a href="#" class="link">Forum</a>
-          <a href="#" class="link">FAQ</a>
+            <a href="#" class="link">Forum</a>
         </nav>
       </nav>
       <div class="banner-content">
         <h1>IMAGE ANNONCE ICI</h1>
         <p>Disponible le XX/XX/XXXX<p>
+
+      </div>
+      <div class="banner-btn">
+        <button class="ghost-button-transition">Rejoindre l'aventure</button>
       </div>
     </header>
 
     <!-- Presentation -->
     <section id="presentation" class="container-fluid presentation">
       <div class="container pres-content">
-
         <img class="logo-pres center"src="img/logo2.png" alt="Logo Identity">
         <h2 class="title-pres">C'est quoi ?</h2>
         <div class="row">
           <div class="col-xs-12 col-md-6">
-            <div class="vignette">
+            <div class="vignette" data-toggle="modal" data-target="#modal-vignette-1">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <div class="vignette">
+            <div class="vignette" data-toggle="modal" data-target="#modal-vignette-2">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <div class="vignette">
+            <div class="vignette" data-toggle="modal" data-target="#modal-vignette-3">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <div class="vignette">
+            <div class="vignette" data-toggle="modal" data-target="#modal-vignette-4">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <div class="vignette">
+            <div class="vignette" data-toggle="modal" data-target="#modal-vignette-5">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <div class="vignette">
+            <div class="vignette" data-toggle="modal" data-target="#modal-vignette-6">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODALS -->
+      <div class="modal fade" id="modal-vignette-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 1</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-vignette-2" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 2</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-vignette-3" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 3</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-vignette-3" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 3</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-vignette-4" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 4</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-vignette-5" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 5</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-vignette-6" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Vignette 6</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -89,16 +206,12 @@
         <div class="row">
           <div class="col-md-4 col-xs-12">
             <div class="acces-infos">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptatibus alias et, accusantium ea aut, nulla eligendi a illo iure voluptatem asperiores, ullam mollitia quam, quis accusamus eius hic ad!</p>
-              <button type="button" name="button">Rejoins nous !</button>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <button type="button" name="button">Des questions ?</button>
+              <p>Tu souhaite t'inscrire ?</p>
+              <button type="button" class="ghost-button-transition" name="button">Rejoins nous !</button>
             </div>
           </div>
           <div class="col-md-8 col-xs-12">
-
               <img class="acces-img" src="https://unsplash.it/1920/1080" alt="Img GTA">
-
           </div>
         </div>
       </div>
@@ -106,7 +219,24 @@
 
     <!-- Footer -->
     <footer class="container-fluid footer">
-
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-md-4">
+              <img id="img-footer" src="img/logo_footer.png" alt="Logo Identity">
+            </div>
+            <div class="col-md-4">
+              <p class="copyright">Identity Roleplay © Copyright 2016 </p>
+            </div>
+            <div class="col-md-4">
+              <div class="media-buttons">
+                <a href=""><i class="fa fa-twitter social-media" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-youtube-play social-media" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
 

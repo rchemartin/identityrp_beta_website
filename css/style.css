@@ -31,6 +31,26 @@ a, a:hover, a:focus{
   margin-left: auto;
   margin-right: auto;
 }
+.ghost-button-transition {
+  background-color: inherit;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
 
 /* Header */
 .header{
@@ -96,6 +116,10 @@ a, a:hover, a:focus{
 .banner-content > p{
   font-size: 1.5em;
 }
+.banner-btn{
+  margin-top: 50px;
+  text-align: center;
+}
 /*
 
 
@@ -136,7 +160,7 @@ a, a:hover, a:focus{
 
 /* Acces */
 #acces{
-  background-color: #e5e5e5;
+  background-color: #333;
 }
 #acces .acces-content{
   margin-top: 50px;
@@ -147,7 +171,31 @@ a, a:hover, a:focus{
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
+  color: #ccc;
 }
 #acces .acces-img{
   width: 100%;
+}
+#acces .acces-infos{
+  margin-top: 30px;
+  color: #ccc;
+}
+
+
+/* Footer */
+.footer .footer-content{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer #img-footer{
+  height: 120px;
+}
+.footer .copyright{
+  text-align: center;
+}
+.footer .media-buttons{
+  float: right;
+}
+.footer .social-media{
+  font-size: 2em;
 }

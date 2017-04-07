@@ -3,6 +3,14 @@ $(function(){
 
 $('.vignette').css( 'cursor', 'pointer' );
 
+
+// Création des modals dans le html
+/*
+for(var j= 1; j<=6; j++){
+
+}
+*/
+
 /*
   var card = $(".header");
 
@@ -15,4 +23,5 @@ $('.vignette').css( 'cursor', 'pointer' );
   });
 
 */
-})
+
+});
