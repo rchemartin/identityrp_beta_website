@@ -1,8 +1,13 @@
-<!DOCTYPE html>
+sm<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>BETA Identity</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
     <!-- Style -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,20 +21,29 @@
 
       <nav class="nav-bar">
         <a href="#" class="brand"><img src="img/logo.png" alt="Logo"></a>
-        <nav class="menu">
+        <div class="bars">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="menu">
           <a href="#beta" class="link">Beta</a>
           <a href="#presentation" class="link">Gameplay</a>
           <a href="#acces" class="link">Nous rejoindre</a>
-            <a href="#" class="link">Forum</a>
-        </nav>
+          <a href="#" class="link">Forum</a>
+        </div>
       </nav>
+      <div class="menu-responsive">
+        <a href="#beta" class="link-responsive">Beta</a>
+        <a href="#presentation" class="link-responsive">Gameplay</a>
+        <a href="#acces" class="link-responsive">Nous rejoindre</a>
+        <a href="#" class="link-responsive">Forum</a>
+      </div>
       <div class="banner-content">
         <h1>IMAGE ANNONCE ICI</h1>
         <p>Disponible le XX/XX/XXXX<p>
 
       </div>
       <div class="banner-btn">
-        <button class="ghost-button-transition">Rejoindre l'aventure</button>
+        <button class="ghost-button-transition-orange">Rejoindre l'aventure</button>
       </div>
     </header>
 
@@ -39,35 +53,35 @@
         <img class="logo-pres center"src="img/logo2.png" alt="Logo Identity">
         <h2 class="title-pres">C'est quoi ?</h2>
         <div class="row">
-          <div class="col-xs-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <div class="vignette" data-toggle="modal" data-target="#modal-vignette-1">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <div class="vignette" data-toggle="modal" data-target="#modal-vignette-2">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <div class="vignette" data-toggle="modal" data-target="#modal-vignette-3">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <div class="vignette" data-toggle="modal" data-target="#modal-vignette-4">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
               <p class="desc-pres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit reiciendis quos iure doloremque enim praesentium assumenda sequi provident amet itaque quae ducimus, harum dolor, ipsum magni eligendi quas nobis maxime?</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <div class="vignette" data-toggle="modal" data-target="#modal-vignette-5">
               <img class="vignette-photo" src="https://unsplash.it/800/250" alt="img">
               <h4 class="title">Titre</h4>
@@ -204,13 +218,14 @@
       <div class="container acces-content">
         <h2 class="title-acces">Pas encore inscrit ?</h2>
         <div class="row">
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-sm-12">
             <div class="acces-infos">
-              <p>Tu souhaite t'inscrire ?</p>
               <button type="button" class="ghost-button-transition" name="button">Rejoins nous !</button>
+              <p>Tu souhaite suivre les news de developpement ?</p>
+              <button class="ghost-button-transition-orange">Devblog</button>
             </div>
           </div>
-          <div class="col-md-8 col-xs-12">
+          <div class="col-md-8 col-sm-12">
               <img class="acces-img" src="https://unsplash.it/1920/1080" alt="Img GTA">
           </div>
         </div>
@@ -222,14 +237,15 @@
       <div class="container">
         <div class="footer-content">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <img id="img-footer" src="img/logo_footer.png" alt="Logo Identity">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <p class="copyright">Identity Roleplay © Copyright 2016 </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <div class="media-buttons">
+                <a href=""><i class="fa fa-facebook-official social-media" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-twitter social-media" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-youtube-play social-media" aria-hidden="true"></i></a>
               </div>

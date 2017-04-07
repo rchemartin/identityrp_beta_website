@@ -1,6 +1,5 @@
 $(function(){
 
-
 $('.vignette').css( 'cursor', 'pointer' );
 
 
@@ -8,9 +7,15 @@ $('.vignette').css( 'cursor', 'pointer' );
 /*
 for(var j= 1; j<=6; j++){
 
+
+
+
 }
 */
-
+$('.bars').on('click', function(){
+  $('.menu-responsive').slideToggle("slow");
+});
+$('.bars').css( 'cursor', 'pointer' );
 /*
   var card = $(".header");
 

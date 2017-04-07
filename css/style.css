@@ -13,6 +13,14 @@ background http://cdn.wccftech.com/wp-content/uploads/2015/05/GTA-V-6K-7.jpg  //
 
 
 */
+p,button{
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4{
+}
 
 body{
   margin: 0;
@@ -32,7 +40,7 @@ a, a:hover, a:focus{
   margin-right: auto;
 }
 .ghost-button-transition {
-  background-color: inherit;
+  background-color: rgba(100,100,100,0.5);
   display: inline-block;
   width: 200px;
   padding: 8px;
@@ -51,6 +59,30 @@ a, a:hover, a:focus{
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
 }
+.ghost-button-transition-orange {
+  background-color: rgba(100,100,100,0.5);
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #E1672C;
+  border: 2px solid #E1672C;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition-orange:hover,
+.ghost-button-transition-orange:active {
+  background-color: #E1672C;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+.ghost-button-transition-orange, .ghost-button-transition{
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 /* Header */
 .header{
@@ -64,12 +96,36 @@ a, a:hover, a:focus{
   height: 100vh;
   border-bottom: 1px solid #aaa;
 }
-
 .nav-bar{
   height: 100px;
   line-height: 100px;
   border-bottom: 1px solid #777;
   background-color: rgba(0,0,0,0.2);
+}
+
+.link{
+  position: relative;
+  padding-bottom: 5px;
+}
+.link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .brand{
   float:left;
@@ -80,6 +136,33 @@ a, a:hover, a:focus{
 }
 .menu{
   float:right;
+  margin-right: 50px;
+}
+.menu-responsive{
+    display:none;
+    position:absolute;
+    width: 100%;
+    /*background-color: rgba(225,103,44,0.8);*/
+    background-color: rgba(0,0,0,0.9);
+}
+.menu-responsive .link-responsive{
+  display:inline-block;
+  width: 100%;
+  padding-left: 80px;
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: #eee;
+  border-bottom: 1px solid #ccc
+}
+.menu-responsive .link-responsive:hover, .menu-responsive .link-responsive:focus{
+  color: #d5d5d5;
+}
+.bars{
+  display: none;
+  float: right;
+  font-size: 2em;
   margin-right: 50px;
 }
 .menu > a{
@@ -119,6 +202,22 @@ a, a:hover, a:focus{
 .banner-btn{
   margin-top: 50px;
   text-align: center;
+}
+.banner-btn .ghost-button-transition-orange{
+  width: 300px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .menu{
+    display: none;
+  }
+  .bars{
+    display: block;
+  }
+  .banner-content{
+    width: 90%;
+  }
 }
 /*
 
@@ -179,23 +278,65 @@ a, a:hover, a:focus{
 #acces .acces-infos{
   margin-top: 30px;
   color: #ccc;
+  text-align: center;
+  height: 300px;
+  margin-top: 100px;
+}
+#acces .acces-infos p{
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 
 /* Footer */
+.footer{
+  height: 200px;
+  line-height: 190px;
+  background-color: #222;
+}
 .footer .footer-content{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .footer #img-footer{
-  height: 120px;
+  height: 150px;
 }
 .footer .copyright{
   text-align: center;
+  color: #ddd;
 }
 .footer .media-buttons{
   float: right;
 }
 .footer .social-media{
   font-size: 2em;
+  margin-left: 5px;
+  color: #E1672C;
+}
+
+.footer .social-media:hover{
+  color: #bf511b;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer{
+      padding-top: 60px;
+      padding-bottom: 60px;
+      height: inherit;
+      line-height: normal;
+    }
+  .footer #img-footer{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer .media-buttons{
+    margin-top: 20px;
+    text-align:center;
+    font-size: 2em;
+    float:none;
+  }
 }
