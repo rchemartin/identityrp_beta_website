@@ -6,6 +6,8 @@
     <meta name="description" content="Identity RP arrive ! La béta du serveur Roleplay GTA V tant attendu ouvre ses portes au public les 21, 22 et 23 Avril 2017, de 21h à 00h30 !">
     <title>Béta IdentityRP</title>
 
+    <link rel="icon" href="img/favicon.png">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
   <body>
+
+    <div class="se-pre-con"><img src="img/loader.png" alt=""></div>
 
     <!-- Navigation -->
     <header class="container-fluid header">
@@ -39,18 +43,18 @@
         <a data-scroll="acces" class="link-responsive">Nous rejoindre</a>
         <a href="#" class="link-responsive">Forum</a>
       </div>
-      <div class="banner-content">
-        <img src="img/annonce-large.png" alt="Annonce">
+      <div class="banner-content perspective-wrapper">
+        <img src="img/annonce-large.png" class="perspective-layer background" alt="Annonce">
       </div>
-      <div class="banner-btn">
-        <button class="ghost-button-transition-orange">Rejoindre l'aventure</button>
+      <div class="banner-btn perspective-layer">
+        <button class="ghost-button-transition-orange btn-rejoindre">Rejoindre l'aventure</button>
       </div>
     </header>
 
     <!-- Presentation -->
     <section id="presentation" class="container-fluid presentation">
       <div class="container pres-content">
-        <img class="logo-pres center"src="img/logo2.png" alt="Logo Identity">
+        <img class="logo-pres center" src="img/logo2.png" alt="Logo Identity">
         <h2 class="title-pres">C'est quoi ?</h2>
         <div class="row">
           <div class="col-sm-12 col-md-6">
@@ -260,9 +264,9 @@
             </div>
             <div class="col-md-2 col-sm-12">
               <div class="media-buttons">
-                <a href=""><i class="fa fa-facebook-official social-media" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-twitter social-media" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-youtube-play social-media" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/IdentityRP/?fref=ts"><i class="fa fa-facebook-official social-media" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/IdentityRP_fr"><i class="fa fa-twitter social-media" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCY2BvtiTlNz1o1uwqXsnt_A"><i class="fa fa-youtube-play social-media" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -272,7 +276,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-    <script src="js/jquery.hover3d.js" ></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="js/3D.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script src="js/scroll.js" charset="utf-8"></script>

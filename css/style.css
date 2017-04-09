@@ -90,21 +90,44 @@ a, a:hover, a:focus{
   font-weight: bold;
 }
 
+/* Loader */
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: #222;
+}
+.se-pre-con img{
+  display: block;
+  margin-right: auto;
+  margin-top: 40vh;
+  margin-left: auto;
+}
+
 /* Header */
 
 .banner-img{
-  margin: -100px 0 0 -100px;
   position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100%;
+  min-width: 100%;
   z-index: -999;
 }
 
 .header{
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   height: 100vh;
   border-bottom: 1px solid #aaa;
   position: relative;
@@ -210,6 +233,7 @@ a, a:hover, a:focus{
   color: #eee;
 }
 .banner-content{
+  display:none;
   margin-top: 20vh;
   width: 600px;
   margin-right: auto;
@@ -226,6 +250,7 @@ a, a:hover, a:focus{
   text-align: center;
 }
 .banner-btn .ghost-button-transition-orange{
+  display: none;
   width: 300px;
 }
 
