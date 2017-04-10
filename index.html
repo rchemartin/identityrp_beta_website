@@ -24,7 +24,7 @@
 
     <!-- Navigation -->
     <header class="container-fluid header">
-      <img src="img/background.jpg" class="banner-img" alt="Banner site">
+      <img src="img/background.jpg" id="background" class="banner-img mouse-bg" alt="Banner site">
       <nav class="nav-bar">
         <a href="#" class="brand"><img src="img/logo.png" alt="Logo"></a>
         <div class="bars">
@@ -43,10 +43,10 @@
         <a data-scroll="acces" class="link-responsive">Nous rejoindre</a>
         <a href="#" class="link-responsive">Forum</a>
       </div>
-      <div class="banner-content perspective-wrapper">
-        <img src="img/annonce-large.png" class="perspective-layer background" alt="Annonce">
+      <div class="banner-content">
+        <img src="img/annonce-large.png" id="foreground" class="mouse-bg background" alt="Annonce">
       </div>
-      <div class="banner-btn perspective-layer">
+      <div class="banner-btn">
         <button class="ghost-button-transition-orange btn-rejoindre">Rejoindre l'aventure</button>
       </div>
     </header>
@@ -277,8 +277,8 @@
 
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script src="js/3D.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mouse.parallax.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <script src="js/scroll.js" charset="utf-8"></script>
   </body>
