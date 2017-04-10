@@ -35,8 +35,8 @@ $(function(){
     window.location.href = 'https://forum.identityrp.fr/viewforum.php?f=4&sid=f2d297b618593ac98115533cf3423d1b';
   })
 
-  $('#background').mouseParallax({ moveFactor: 5 });
-  $('#foreground').mouseParallax({ moveFactor: 5 });
+  $('#background').mouseParallax({ moveFactor: 1 });
+  $('#foreground').mouseParallax({ moveFactor: 1 });
 
 
 });
