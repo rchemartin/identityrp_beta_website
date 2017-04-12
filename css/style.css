@@ -288,7 +288,7 @@ nav{
   transition: background-color 0.3s ease-out,
               color 0.3s ease-out;
 }
-.banner-btn .btn-rejoindre:hover,.banner-btn .btn-rejoindre:focus, .banner-btn .btn-rejoindre:active{
+.banner-btn .btn-rejoindre:hover{
   text-decoration: none;
   outline: 0;
   background-color: #E1672C;
@@ -296,6 +296,10 @@ nav{
   font-weight: bolder;
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
+}
+.banner-btn .btn-rejoindre:active,.banner-btn .btn-rejoindre:focus{
+  text-decoration: none;
+  outline: 0;
 }
 
 
