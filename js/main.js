@@ -1,6 +1,8 @@
 $('.se-pre-con img').fadeIn(400);
 
 var cnt = 0;
+var pts = 0;
+var i = 0;
 setInterval(function(){
   cnt ==1 ? cnt=0:cnt++
   $('.se-pre-con img').fadeOut(400);
@@ -16,7 +18,6 @@ $(function(){
     $('.menu-responsive').slideToggle("slow");
     $('.menu-responsive').toggleClass('responsive-open');
     $('.nav-bar').toggleClass('responsive-open');
-    $('.bars').toggleClass('txt-white');
   });
   $('.bars').css( 'cursor', 'pointer' );
   $('.vignette').css( 'cursor', 'pointer' );
